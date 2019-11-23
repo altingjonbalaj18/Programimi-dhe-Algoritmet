@@ -23,4 +23,4 @@ public class Ora1 extends JPanel{
     }public static void main(String [] a){
       new Ora1();
     }
-    }
+}
