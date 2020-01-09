@@ -47,10 +47,10 @@ public class AutoOutputFrame extends JPanel implements ActionListener {
    
    public void paintComponent(Graphics g) {
       g.setColor(Color.black);
+      g.drawString("------------------------------------------------------------------------------------------------", 0, 75);
       switch(time) {
          case 1 : 
             distance = input.returnDistance(time);
-            g.drawString("------------------------------------------------------------------------------------------------", 0, 75);
             g.drawString("| " + time + " s ---- " + distance + " m |", 0 ,  70 + 20 * time);
             break;
          case 2 :
@@ -106,5 +106,5 @@ public class AutoOutputFrame extends JPanel implements ActionListener {
             g.drawString("| " + time + " s -------------------------------------------------------- " + distance + " m |", 0 , 70 + 20 * time);
             break;
       }        
-   } 
+   }
 }
